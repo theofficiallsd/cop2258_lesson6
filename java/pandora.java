@@ -16,32 +16,30 @@ public class pandora
         //Display welcome menu
         System.out.println("**************** WELCOME TO PANDORA ******************************");
         System.out.println(""); //Blank line
-        System.out.println("PANDORA MENU:");
-        System.out.println("1 - Create New Pandora Channel");       //Center all text in welcome menu
-        System.out.println("2 - Play Pandora Channel");             //Center all text in welcome menu
-        System.out.println("3 - Exit Pandora");
+        System.out.println("        PANDORA MENU:       ");
+        System.out.println("        1 - Create New Pandora Channel");       //Center all text in welcome menu
+        System.out.println("        2 - Play Pandora Channel");             //Center all text in welcome menu
+        System.out.println("        3 - Exit Pandora");
         System.out.println(""); //Blank line
         System.out.println("******************************************************************");
         System.out.println(""); //Blank line
-        System.out.println("Please enter your last name followed by your Menu Choice: "); //User enters 1, 2, or 3 from welcome menu
+        System.out.print("Please enter your last name followed by your Menu Choice: "); //User enters last name and 1, 2, or 3 from welcome menu
         
-        lname = input.next(); //Read last name from keyboard
-        //lname = name.toUpperCase(); //Makes name all caps
+        lname = input.next().toUpperCase(); //Read name from keybard and change to upper case
         menuSelection = input.next();
-        System.out.println("Hello, " + lname); //Should be displayed in all caps
         
         
-        
-        
-        //switch statements
+        //Menu switch statements
         switch (menuSelection) {
             case "1" : //Menu #1
             
                 System.out.println("You have selected the CREATE NEW PANDORA CHANNEL menu item!");
-                System.out.println("Please enter the name of your new channel: ");
+                System.out.print("Please enter the name of your new channel: ");
                 
-                channelName = input.next();
+                //channelName needs to be able to capture more than one word
+                channelName = input.next().toUpperCase(); //Read from keyboard and make upper case
                 
+                System.out.println(""); //Blank line
                 System.out.println("You have successfully created the following Pandora channel: " + channelName); //Print channel name in all caps
                 System.out.println(""); //Blank line
                 System.out.println(lname + " Thank you for being a valued listener!");
@@ -52,13 +50,23 @@ public class pandora
                 System.out.println("You have selected the PLAY PANDORA CHANNEL menu item!");
                 System.out.println(""); //Blank line
                 System.out.println("The user: " + lname + " currently has created the following channels: "); //lname needs to be displayed and capitalized
+                System.out.println(""); //Blank line
+                
+                //User's created channels
                 System.out.println("1. Logic");
                 System.out.println("2. August Burns Red");
                 System.out.println("3. Kanye West");
                 System.out.println("4. Drake");
-                System.out.println("5. Rich Homie Quan");
+                System.out.println("5. Periphery");
                 
-                System.out.println("Which cannel would you like to listen to? (Enter 1, 2, 3, 4, or 5): ");
+                //Additional channels for extra credit
+                System.out.println("6. The Weekend");
+                System.out.println("7. The Notorious B.I.G.");
+                System.out.println("8. Snoop Dogg");
+                System.out.println("9. Gucci Mane");
+                System.out.println("10. Dj Khaled");
+                System.out.println(""); //Blank line
+                System.out.print("Which cannel would you like to listen to? (Enter 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10): ");
                 channel = input.nextInt(); //Read user's channel input
                     
                     switch (channel) {
@@ -79,8 +87,29 @@ public class pandora
                             break;
                         
                         case 5 :
-                            System.out.println("You are now listening to: RICH HOMIE QUAN");
+                            System.out.println("You are now listening to: PERIPHERY");
                             break;
+                        
+                        case 6 :
+                            System.out.println("You are now listening to: THE WEEKEND");
+                            break;
+                            
+                        case 7 :
+                            System.out.println("You are now listening to: THE NOTORIOUS B.I.G.");
+                            break;
+                        
+                        case 8 :
+                            System.out.println("You are now listening to: SNOOP DOGG");
+                            break;
+                            
+                        case 9 :
+                            System.out.println("You are now listening to: GUCCI MANE");
+                            break;
+                        
+                        case 10 :
+                            System.out.println("You are now listening to: DJ KHALED");
+                            break;
+                            
                         
                     } //End of channel switch
                     
