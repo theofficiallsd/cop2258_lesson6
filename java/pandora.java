@@ -66,7 +66,7 @@ public class pandora
                 System.out.println("9. Gucci Mane");
                 System.out.println("10. Dj Khaled");
                 System.out.println(""); //Blank line
-                System.out.print("Which cannel would you like to listen to? (Enter 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10): ");
+                System.out.print("Which channel would you like to listen to? (Enter 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10): ");
                 channel = input.nextInt(); //Read user's channel input
                     
                     switch (channel) {
@@ -112,7 +112,7 @@ public class pandora
                             
                         
                     } //End of channel switch
-                    
+                System.out.println("");    
                 System.out.println("Thank you " + lname + " for being a valued listener");
                 break;
                 
