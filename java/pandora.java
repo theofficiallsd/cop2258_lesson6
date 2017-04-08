@@ -1,3 +1,14 @@
+   /*
+      Project Name:  Pandora Music Application
+      
+      Author: Logan Drake
+      
+      Date:   03/31/2017
+      
+      Filename: Pandora.java
+      
+   */
+
 import java.util.Scanner;
 
 public class pandora

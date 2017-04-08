@@ -6,7 +6,10 @@ public class Challenge1{
          
         Scanner input = new Scanner(System.in);
         
-        System.out.print("\nPlease enter your full name: ");
+        //This program is designed to have users enter a letter, and the program will return the corresponding 
+        // telephone number that letter can be found on
+        
+        System.out.print("Please enter a letter: ");
         
         String n1 = input.next(); //Read first name
         String n2 = input.next(); //Read middle name
